@@ -19,7 +19,6 @@ npm run lint     # eslint
 
 > Each project is self-contained: run the commands **inside the project folder**.
 
-
 ## Files
 
 - `src/app.jsx`
@@ -27,10 +26,3 @@ npm run lint     # eslint
 - `src/components`
 - `src/index.css`
 - `src/main.jsx`
-
-## Variants
-
-Earlier/alternate implementations kept from the original repository for reference.
-
-- `variants/beer-punkapi.jsx`
-- `variants/pagination-with-react-import.jsx`

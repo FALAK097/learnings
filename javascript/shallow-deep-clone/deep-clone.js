@@ -3,13 +3,13 @@
 const originalArray = [1, 2, [3, 4]];
 
 // Deep copy using JSON.parse() and JSON.stringify()
-const deepCopy = JSON.parse(JSON.stringify(originalArray));
+const deepCopyFromJson = JSON.parse(JSON.stringify(originalArray));
 
 // Modify the nested array in the deep copy
-deepCopy[2][0] = 99;
+deepCopyFromJson[2][0] = 99;
 
 console.log(originalArray); // [1, 2, [3, 4]]
-console.log(deepCopy); // [1, 2, [99, 4]]
+console.log(deepCopyFromJson); // [1, 2, [99, 4]]
 
 // 2. Using a Recursive Function for Objects:
 
@@ -32,10 +32,10 @@ function deepCopy(obj) {
 const originalObject = { a: 1, b: { c: 2 } };
 
 // Deep copy using a recursive function
-const deepCopy = deepCopy(originalObject);
+const deepCopyFromFunction = deepCopy(originalObject);
 
 // Modify the nested object in the deep copy
-deepCopy.b.c = 99;
+deepCopyFromFunction.b.c = 99;
 
 console.log(originalObject); // { a: 1, b: { c: 2 } }
-console.log(deepCopy); // { a: 1, b: { c: 99 } }
+console.log(deepCopyFromFunction); // { a: 1, b: { c: 99 } }

@@ -19,17 +19,9 @@ npm run lint     # eslint
 
 > Each project is self-contained: run the commands **inside the project folder**.
 
-
 ## Files
 
 - `src/app.jsx`
 - `src/assets`
 - `src/index.css`
 - `src/main.jsx`
-
-## Variants
-
-Earlier/alternate implementations kept from the original repository for reference.
-
-- `variants/app-plain-css.jsx`
-- `variants/index.css`
